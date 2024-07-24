@@ -1,56 +1,228 @@
-:root{
-    --primary-color: #16356D;
-    --secondary-color: #FF6A13; 
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
 body {
     font-family: 'SF Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-.bold-text {
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left, .right {
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.left {
+    background-color: white;
+    padding: 40px;
+    margin: 3% 5%;
+}
+
+.right {
+    position: relative;
+    padding: 40px;
+    margin: 3% 5%;
+    border-radius: 16px;
+    background: url('register.jfif') no-repeat center center/cover;
+    
+}
+
+.right .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.rigth-motto{
+    font-weight: 700px;
+    font-size: 3rem;
+    max-width: 389px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #16356D;
+}
+
+h2 {
+    font-size: 2rem;
     font-weight: bold;
 }
 
-.semibold-text {
-    font-weight: 600;
+h2 span {
+    color: #FF6A13;
 }
 
-.medium-text {
-    font-weight: 500;
+p {
+    color: #7f8c8d;
 }
 
-.regular-text {
-    font-weight: normal;
+form{
+    padding: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-#register-title{
-    color: var(--primary-color);
-    font-size: 48px;
-}
-
-.register-page{
+.social-login{
     display: flex;
-    margin: 2rem;
-}
-
-.title{
-
-    h1{
-        margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    i{
+        margin-left: 15%;
     }
     p{
-        margin-top: 0rem;
+        text-wrap: nowrap;
+    }
+    img{
+        padding: 20%;
     }
 }
 
-.register-left{
-    min-width: 50%;
-    width: 50%;
+.register-logo{
 }
-.register-rigth{
-    min-width: 50%;
-    width: 50%;
-    position: relative;
-    border-radius: 16px;
+
+.social-login .google {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.social-login .apple {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: #7f8c8d;
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin:2% 0%;
+    width: 48%;
+}
+
+.input-box-other{
+    width: 100%;
+}
+
+.input-box label {
+    margin-bottom: 5px;
+    color: #7f8c8d;
+}
+
+.input-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 2% 0%;
+}
+
+
+
+.checkbox label a {
+    color: #16356D;
+    text-decoration: none;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #16356D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #16356D;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }

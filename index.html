@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="register-page">
-      <div class="register-left">
-        <div class="title">
-          <h1 id="register-title" class="bold-text">Register</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="container">
+      <div class="left">
+        <h1>Register</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
+        <div class="social-login">
+          <p>Continue with:</p>
+          <i><img class="google " src="./Google.svg" alt="" /></i>
+          <i> <img class="apple " src="./Apple.svg" alt="" /> </i>
         </div>
+        <div class="divider">
+          <hr />
+          <span>OR</span>
+          <hr />
+        </div>
+        <form>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="first-name">FIRST NAME*</label>
+              <input type="text" id="first-name" placeholder="Your Name" />
+            </div>
+            <div class="input-box">
+              <label for="last-name">LAST NAME*</label>
+              <input type="text" id="last-name" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="input-box input-box-other">
+            <label for="email">EMAIL*</label>
+            <input type="email" id="email" placeholder="Your Email" />
+          </div>
+          <div class="input-box input-box-other">
+            <label for="phone">PHONE*</label>
+            <input type="tel" id="phone" placeholder="Your Phone" />
+          </div>
+          <div class="input-box input-box-other">
+            <label for="password">PASSWORD*</label>
+            <input type="password" id="password" placeholder="Your Password" />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="agree" />
+            <label for="agree"
+              >I agree with <a href="#">Privacy Policy & Terms</a></label
+            >
+          </div>
+          <button type="submit" class="register-btn">Register</button>
+          <p class="login-link">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+        </form>
       </div>
-      <div class="register-rigth">
-        <img src="./register.jfif" alt="selam" />
+      <div class="right">
+        <img class="register-logo" src="register-logo.png" alt="">
+        <div class="overlay">
+          <h2 class="rigth-motto">Quick <span>Cleaning</span> of the Clothes</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Pricing & Service</a>
+            <a href="#">Contact Us</a>
+          </nav>
       </div>
     </div>
   </body>
